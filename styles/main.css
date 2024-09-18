@@ -1,1 +1,154 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&display=swap');
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #0066B3;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+header .header-contact {
+  display: flex;
+  align-items: center;
+}
+
+header .header-contact .phone-number {
+  color: white;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+header #language-toggle {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('../images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+.hero .cta-buttons .btn {
+  background-color: #D80027;
+  color: white;
+  padding: 15px 25px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Services Section */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 40px;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card {
+  flex: 1 1 200px;
+  max-width: 300px;
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.service-card i {
+  font-size: 50px;
+  color: #0066B3;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+}
+
+footer .footer-sections {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .footer-section {
+  flex: 1 1 200px;
+  margin: 15px;
+}
+
+footer .footer-section h3 {
+  font-family: 'Lato', sans-serif;
+}
+
+footer .social-media a {
+  color: white;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .footer-sections {
+    flex-direction: column;
+  }
+}
 
