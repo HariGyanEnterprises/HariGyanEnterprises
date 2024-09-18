@@ -124,6 +124,7 @@ nav ul li a:hover {
   text-align: center;
   padding: 100px 20px;
   overflow: hidden; /* Ensures child elements are contained */
+  margin-top: 60px; /* To prevent content being hidden behind fixed header */
 }
 
 .hero::before {
