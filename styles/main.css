@@ -295,7 +295,7 @@ footer {
   background-color: #2F4F4F;
   color: white;
   text-align: center;
-  flex-shrink: 0; /* Prevent footer from shrinking */
+  flex-shrink: 0;
 }
 
 /* Why Choose Us */
