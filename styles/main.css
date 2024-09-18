@@ -423,7 +423,11 @@ footer {
 .social-media a:hover {
   color: #ccc;
 }
-
+/* About Section */
+.about {
+  padding-top: 100px; /* Adjust to match the height of the header */
+  padding-bottom: 60px;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   header .container {
@@ -477,6 +481,9 @@ footer {
   #language-toggle {
     padding: 5px 10px;
     font-size: 0.9em;
+  }
+  .about {
+    padding-top: 120px; /* Increase top padding for smaller devices if necessary */
   }
   .footer-sections {
     flex-direction: column;
@@ -557,7 +564,9 @@ footer {
   /* Existing styles */
   margin-top: 65px; /* To offset the fixed header */
 }
-
+.about {
+    padding-top: 120px; /* Increase top padding for smaller devices if necessary */
+  }
 }
 
 
@@ -580,6 +589,9 @@ footer {
   }
 #contact {
     padding-top: 100px; /* Slightly increase padding on smaller devices */
+  }
+  .about {
+    padding-top: 120px; /* Increase top padding for smaller devices if necessary */
   }
 }
 
@@ -614,6 +626,9 @@ footer {
   }
   #contact {
     padding-top: 100px; /* Slightly increase padding on smaller devices */
+  }
+  .about {
+    padding-top: 140px; /* Ensure adequate padding on very small screens */
   }
 }
 
