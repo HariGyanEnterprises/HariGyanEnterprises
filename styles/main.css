@@ -445,9 +445,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
-#contact {
-    padding-top: 140px; /* Slightly increase padding on smaller devices */
-  }
+
   nav {
     display: none;
     width: 100%;
@@ -494,7 +492,7 @@ footer {
     font-size: 0.9em;
   }
   .about {
-    padding-top: 120px; /* Increase top padding for smaller devices if necessary */
+    padding-top: 160px; /* Increase top padding for smaller devices if necessary */
   }
   .footer-sections {
     flex-direction: column;
@@ -511,7 +509,7 @@ footer {
     width: 120px;
   }
 #contact {
-    padding-top: 100px; /* Slightly increase padding on smaller devices */
+    padding-top: 160px; /* Slightly increase padding on smaller devices */
   }
   nav {
     position: absolute;
@@ -599,10 +597,10 @@ footer {
     padding: 40px 0;
   }
 #contact {
-    padding-top: 140px; /* Slightly increase padding on smaller devices */
+    padding-top: 180px; /* Slightly increase padding on smaller devices */
   }
   .about {
-    padding-top: 160px; /* Increase top padding for smaller devices if necessary */
+    padding-top: 180px; /* Increase top padding for smaller devices if necessary */
   }
 }
 
@@ -636,7 +634,7 @@ footer {
     padding: 30px 0;
   }
   #contact {
-    padding-top: 140px; /* Slightly increase padding on smaller devices */
+    padding-top: 180px; /* Slightly increase padding on smaller devices */
   }
   .about {
     padding-top: 180px; /* Ensure adequate padding on very small screens */
