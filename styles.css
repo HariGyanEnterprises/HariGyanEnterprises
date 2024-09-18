@@ -1,1 +1,43 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  background-color: #2196F3;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+}
+
+/* Responsive Grid */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  flex: 1 1 300px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
 
