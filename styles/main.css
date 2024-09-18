@@ -232,6 +232,57 @@ nav ul li a:hover {
 .service-card p {
   color: #666;
 }
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.contact h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-item {
+  margin: 15px 0;
+  font-size: 1.2em;
+}
+
+.contact-item i {
+  margin-right: 10px;
+}
+
+.contact-item a {
+  color: #2F4F4F;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.contact-item a:hover {
+  color: #D80027; /* Jio Red */
+}
+
+/* Footer */
+footer {
+  padding: 20px 0;
+  background-color: #2F4F4F;
+  color: white;
+  text-align: center;
+}
 
 /* Why Choose Us */
 .why-choose-us {
