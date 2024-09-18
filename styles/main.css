@@ -477,7 +477,7 @@ footer {
   /* Hero Section Adjustments */
 .hero {
   /* Existing styles */
-  margin-top: 60px; /* To offset the fixed header */
+  margin-top: 65px; /* To offset the fixed header */
 }
 }
 
