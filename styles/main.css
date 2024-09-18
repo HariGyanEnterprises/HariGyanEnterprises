@@ -49,9 +49,6 @@ header .container {
 }
 
 .menu-toggle {
-  position: relative;
-  z-index: 10; /* Ensure it stays above other elements */
-  margin-right: 10px;
   display: none;
   background: none;
   border: none;
@@ -472,6 +469,9 @@ footer {
 
   .menu-toggle {
     display: block;
+    margin-right: 10px;
+    position: relative;
+    z-index: 10; /* Ensure it stays on top */
   }
 
   .header-contact {
