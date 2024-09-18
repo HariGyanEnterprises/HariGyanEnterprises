@@ -25,13 +25,17 @@ a {
 header {
   background-color: #2F4F4F; /* Dark Slate Gray */
   color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
 
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 10px 20px;
 }
 
 .logo-container {
@@ -49,7 +53,7 @@ header .container {
   background: none;
   border: none;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.8em;
   cursor: pointer;
 }
 
@@ -404,23 +408,83 @@ footer {
     align-items: center;
   }
 
-  .header-contact {
+  /*.header-contact {
     margin-top: 10px;
+  }*/
+  .header-contact {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 60px; /* Adjust based on the width of the menu-toggle button */
   }
-
+  #language-toggle {
+    padding: 5px 10px;
+    font-size: 0.9em;
+  }
   .footer-sections {
     flex-direction: column;
     align-items: flex-start;
   }
 }
 
-@media (max-width: 480px) {
+
+/* Existing styles remain the same */
+
+/* Header Adjustments */
+@media (max-width: 768px) {
   .logo-container {
     width: 120px;
   }
 
-  .header-contact .phone-number {
-    font-size: 0.9em;
+  nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #2F4F4F;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  nav ul li a {
+    padding: 15px 0;
+    display: block;
+    border-bottom: 1px solid #444;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-contact {
+    display: none;
+  }
+  /* Hero Section Adjustments */
+.hero {
+  /* Existing styles */
+  margin-top: 60px; /* To offset the fixed header */
+}
+}
+
+
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 20px 60px 20px;
   }
 
   .hero h1 {
@@ -430,4 +494,33 @@ footer {
   .hero p {
     font-size: 1em;
   }
+  /* Services Section */
+  .services {
+    padding: 40px 0;
+  }
+
 }
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 15px 40px 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.6em;
+  }
+
+  .hero p {
+    font-size: 0.9em;
+  }
+
+  .cta-buttons .btn {
+    padding: 14px 28px;
+    font-size: 1em;
+  }
+  .services {
+    padding: 30px 0;
+  }
+}
+
+
