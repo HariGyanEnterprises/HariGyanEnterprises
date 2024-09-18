@@ -10,21 +10,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
   <!-- Font Awesome for icons -->
   <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+  <!-- Meta Description and Keywords for SEO -->
+  <meta name="description" content="HariGyan Enterprises is your trusted Reliance Jio distributor in Maharajganj, Azamgarh. We offer Jio SIMs, Jio Fiber, Jio Phones, and more." />
+  <meta name="keywords" content="HariGyan Enterprises, Jio Distributor, Maharajganj, Azamgarh, Jio SIM, Jio Fiber, Jio Phones" />
 </head>
 <body>
   <!-- Header -->
   <header>
     <div class="container">
-      <div class="logo">
-        <img src="images/logo.png" alt="HariGyan Enterprises Logo">
+      <div class="logo-container">
+        <img src="images/logo.png" alt="HariGyan Enterprises Logo" />
       </div>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
       <nav>
         <ul>
           <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
           <li><a href="products.html" data-en="Products & Services" data-hi="उत्पाद और सेवाएँ">Products & Services</a></li>
           <li><a href="about.html" data-en="About Us" data-hi="हमारे बारे में">About Us</a></li>
           <li><a href="contact.html" data-en="Contact" data-hi="संपर्क करें">Contact</a></li>
-          <!-- Optional Blog -->
+          <!-- Optional Blog Link -->
           <!-- <li><a href="blog.html" data-en="Blog" data-hi="ब्लॉग">Blog</a></li> -->
         </ul>
       </nav>
@@ -52,13 +58,36 @@
     <div class="container">
       <h2 data-en="Our Services" data-hi="हमारी सेवाएँ">Our Services</h2>
       <div class="service-cards">
-        <!-- Service Card Example -->
+        <!-- Service Card 1 -->
         <div class="service-card">
           <i class="fas fa-sim-card"></i>
           <h3 data-en="Jio SIM Cards" data-hi="जिओ सिम कार्ड">Jio SIM Cards</h3>
           <p data-en="Get the latest Jio SIMs with plans tailored to your needs." data-hi="अपनी जरूरतों के अनुसार योजनाओं के साथ नवीनतम जिओ सिम प्राप्त करें।">Get the latest Jio SIMs with plans tailored to your needs.</p>
         </div>
-        <!-- Repeat for other services -->
+        <!-- Service Card 2 -->
+        <div class="service-card">
+          <i class="fas fa-sync-alt"></i>
+          <h3 data-en="Recharge Distribution" data-hi="रिचार्ज वितरण">Recharge Distribution</h3>
+          <p data-en="Reliable recharge solutions for sellers to ensure seamless transactions." data-hi="निरंतर लेनदेन सुनिश्चित करने के लिए विक्रेताओं के लिए विश्वसनीय रिचार्ज समाधान।">Reliable recharge solutions for sellers to ensure seamless transactions.</p>
+        </div>
+        <!-- Service Card 3 -->
+        <div class="service-card">
+          <i class="fas fa-wifi"></i>
+          <h3 data-en="Jio Fiber" data-hi="जिओ फाइबर">Jio Fiber</h3>
+          <p data-en="Experience high-speed internet with Jio Fiber for your home or business." data-hi="अपने घर या व्यवसाय के लिए जिओ फाइबर के साथ उच्च गति इंटरनेट का अनुभव करें।">Experience high-speed internet with Jio Fiber for your home or business.</p>
+        </div>
+        <!-- Service Card 4 -->
+        <div class="service-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3 data-en="Jio Phones" data-hi="जिओ फोन">Jio Phones</h3>
+          <p data-en="Explore our range of advanced, user-friendly Jio Phones." data-hi="हमारे उन्नत, उपयोगकर्ता-अनुकूल जिओ फोन की रेंज का पता लगाएं।">Explore our range of advanced, user-friendly Jio Phones.</p>
+        </div>
+        <!-- Service Card 5 -->
+        <div class="service-card">
+          <i class="fas fa-thumbs-up"></i>
+          <h3 data-en="Complete Jio Services" data-hi="पूर्ण जिओ सेवाएँ">Complete Jio Services</h3>
+          <p data-en="From data packages to value-added services, we cover all your Jio needs." data-hi="डेटा पैकेज से लेकर मूल्य वर्धित सेवाओं तक, हम आपकी सभी जिओ जरूरतों को कवर करते हैं।">From data packages to value-added services, we cover all your Jio needs.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -70,7 +99,8 @@
       <ul>
         <li data-en="Authorized Jio Partner ensuring genuine products" data-hi="प्रामाणिक उत्पादों को सुनिश्चित करते हुए अधिकृत जिओ पार्टनर">Authorized Jio Partner ensuring genuine products</li>
         <li data-en="Exceptional customer service dedicated to your satisfaction" data-hi="आपकी संतुष्टि के लिए समर्पित असाधारण ग्राहक सेवा">Exceptional customer service dedicated to your satisfaction</li>
-        <!-- Add more points -->
+        <li data-en="Local expertise tailored to Maharajganj, Azamgarh community needs" data-hi="महाराजगंज, आजमगढ़ समुदाय की जरूरतों के लिए अनुकूलित स्थानीय विशेषज्ञता">Local expertise tailored to Maharajganj, Azamgarh community needs</li>
+        <li data-en="Reliable support for all your Jio connectivity requirements" data-hi="आपकी सभी जिओ कनेक्टिविटी आवश्यकताओं के लिए विश्वसनीय समर्थन">Reliable support for all your Jio connectivity requirements</li>
       </ul>
     </div>
   </section>
@@ -80,12 +110,16 @@
     <div class="container">
       <h2 data-en="What Our Customers Say" data-hi="हमारे ग्राहक क्या कहते हैं">What Our Customers Say</h2>
       <div class="testimonial-cards">
-        <!-- Testimonial Card Example -->
+        <!-- Testimonial 1 -->
         <div class="testimonial-card">
-          <p>"Great service and very reliable!"</p>
+          <p data-en='"Great service and very reliable!"' data-hi='"बहुत ही अच्छी सेवा और बेहद भरोसेमंद!"'>"Great service and very reliable!"</p>
           <h4>- Rahul Sharma</h4>
         </div>
-        <!-- Repeat for more testimonials -->
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <p data-en='"Excellent customer support."' data-hi='"उत्कृष्ट ग्राहक समर्थन।"'>"Excellent customer support."</p>
+          <h4>- Priya Singh</h4>
+        </div>
       </div>
     </div>
   </section>
@@ -100,7 +134,8 @@
           <ul>
             <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
             <li><a href="products.html" data-en="Products & Services" data-hi="उत्पाद और सेवाएँ">Products & Services</a></li>
-            <!-- Add more links -->
+            <li><a href="about.html" data-en="About Us" data-hi="हमारे बारे में">About Us</a></li>
+            <li><a href="contact.html" data-en="Contact" data-hi="संपर्क करें">Contact</a></li>
           </ul>
         </div>
         <!-- Contact Information -->
@@ -115,7 +150,9 @@
           <h3 data-en="Follow Us" data-hi="हमें फॉलो करें">Follow Us</h3>
           <div class="social-media">
             <a href="#" class="fab fa-facebook-f"></a>
-            <!-- Add more icons -->
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <!-- Add more icons as needed -->
           </div>
         </div>
       </div>
