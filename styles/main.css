@@ -2,11 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&display=swap');
 
 /* General Styles */
-body {
+html, body {
+  height: 100%; /* Ensure body takes up the full height of the viewport */
   margin: 0;
+  display: flex;
+  flex-direction: column; /* Set up flexbox layout */
+}
+
+body {
   font-family: 'Open Sans', sans-serif;
   color: #333;
   background-color: #f9f9f9;
+}
+
+.main-content {
+  flex-grow: 1; /* Ensures that the main content area grows to fill the space */
 }
 
 a {
