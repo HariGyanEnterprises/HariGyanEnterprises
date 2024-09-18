@@ -49,6 +49,9 @@ header .container {
 }
 
 .menu-toggle {
+  position: relative;
+  z-index: 10; /* Ensure it stays above other elements */
+  margin-right: 10px;
   display: none;
   background: none;
   border: none;
@@ -431,7 +434,7 @@ footer {
 
 /* Existing styles remain the same */
 
-/* Header Adjustments */
+/* Header Adjustments *//* Language Toggle for Mobile */
 @media (max-width: 768px) {
   .logo-container {
     width: 120px;
@@ -472,17 +475,31 @@ footer {
   }
 
   .header-contact {
-    display: none;
+    position: absolute;
+    top: 15px;
+    right: 60px; /* Place next to the hamburger menu */
+    display: block;
+  }
+  #language-toggle {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  #language-toggle:hover {
+    background-color: white;
+    color: #2F4F4F;
   }
   /* Hero Section Adjustments */
 .hero {
   /* Existing styles */
   margin-top: 65px; /* To offset the fixed header */
 }
-#language-toggle {
-    padding: 5px 10px;
-    font-size: 0.9em;
-  }
+
 }
 
 
@@ -507,6 +524,15 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .header-contact {
+    top: 10px;
+    right: 50px;
+  }
+
+  #language-toggle {
+    padding: 4px 8px;
+    font-size: 0.8em;
+  }
   .hero {
     padding: 60px 15px 40px 15px;
   }
