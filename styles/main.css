@@ -479,6 +479,10 @@ footer {
   /* Existing styles */
   margin-top: 65px; /* To offset the fixed header */
 }
+#language-toggle {
+    padding: 5px 10px;
+    font-size: 0.9em;
+  }
 }
 
 
