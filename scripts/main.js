@@ -13,3 +13,8 @@ function toggleLanguage() {
   langToggleButton.textContent = currentLanguage === 'en' ? 'हिंदी' : 'English';
 }
 
+// Mobile Menu Toggle
+function toggleMenu() {
+  const nav = document.querySelector('header nav');
+  nav.classList.toggle('active');
+}
