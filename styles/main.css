@@ -166,14 +166,12 @@ nav ul li a:hover {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  position: relative;
-  overflow: hidden;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
   background-color: #1E3A3A;
-  transform: translateY(-4px);
+  transform: translateY(-2px);
 }
 
 .btn:hover::after {
