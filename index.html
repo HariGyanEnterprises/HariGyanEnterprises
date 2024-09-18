@@ -3,47 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HariGyan Enterprises</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>HariGyan Enterprises - Home</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <div class="navbar">
-    <div class="logo">
-      <a href="#">HariGyan Enterprises</a>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.png" alt="HariGyan Enterprises Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+          <li><a href="products.html" data-en="Products & Services" data-hi="उत्पाद और सेवाएँ">Products & Services</a></li>
+          <li><a href="about.html" data-en="About Us" data-hi="हमारे बारे में">About Us</a></li>
+          <li><a href="contact.html" data-en="Contact" data-hi="संपर्क करें">Contact</a></li>
+          <!-- Optional Blog -->
+          <!-- <li><a href="blog.html" data-en="Blog" data-hi="ब्लॉग">Blog</a></li> -->
+        </ul>
+      </nav>
+      <div class="header-contact">
+        <a href="tel:5320830756" class="phone-number" data-en="Call Now" data-hi="अभी कॉल करें">532-083-0756</a>
+        <button onclick="toggleLanguage()" id="language-toggle">हिंदी</button>
+      </div>
     </div>
-    <div class="language-toggle">
-      <button onclick="toggleLanguage()">हिंदी / English</button>
-    </div>
-  </div>
+  </header>
 
-  <!-- Content -->
-  <div class="container" id="content">
-    <!-- Products and Services -->
-    <div class="card">
-      <h2 data-en="Jio SIM Cards" data-hi="जिओ सिम कार्ड">Jio SIM Cards</h2>
-      <p data-en="We provide new Jio SIM cards..." data-hi="हम नए जिओ सिम कार्ड प्रदान करते हैं...">
-        We provide new Jio SIM cards...
-      </p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 data-en="Your Trusted Reliance Jio Distributor in Maharajganj, Azamgarh" data-hi="महाराजगंज, आजमगढ़ में आपका विश्वसनीय रिलायंस जिओ वितरक">Your Trusted Reliance Jio Distributor in Maharajganj, Azamgarh</h1>
+      <p data-en="Offering Jio SIMs, Jio Fiber, Jio Phones, and More" data-hi="जिओ सिम, जिओ फाइबर, जिओ फोन, और भी बहुत कुछ प्रदान करना">Offering Jio SIMs, Jio Fiber, Jio Phones, and More</p>
+      <div class="cta-buttons">
+        <a href="products.html" class="btn" data-en="Shop Now" data-hi="अभी खरीदें">Shop Now</a>
+        <a href="contact.html" class="btn" data-en="Contact Us" data-hi="संपर्क करें">Contact Us</a>
+      </div>
     </div>
-    <!-- Add more cards as needed -->
-  </div>
+  </section>
 
-  <!-- Footer with Contact and Social Media Links -->
+  <!-- Featured Services -->
+  <section class="services">
+    <div class="container">
+      <h2 data-en="Our Services" data-hi="हमारी सेवाएँ">Our Services</h2>
+      <div class="service-cards">
+        <!-- Service Card Example -->
+        <div class="service-card">
+          <i class="fas fa-sim-card"></i>
+          <h3 data-en="Jio SIM Cards" data-hi="जिओ सिम कार्ड">Jio SIM Cards</h3>
+          <p data-en="Get the latest Jio SIMs with plans tailored to your needs." data-hi="अपनी जरूरतों के अनुसार योजनाओं के साथ नवीनतम जिओ सिम प्राप्त करें।">Get the latest Jio SIMs with plans tailored to your needs.</p>
+        </div>
+        <!-- Repeat for other services -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-choose-us">
+    <div class="container">
+      <h2 data-en="Why Choose Us" data-hi="हमें क्यों चुनें">Why Choose Us</h2>
+      <ul>
+        <li data-en="Authorized Jio Partner ensuring genuine products" data-hi="प्रामाणिक उत्पादों को सुनिश्चित करते हुए अधिकृत जिओ पार्टनर">Authorized Jio Partner ensuring genuine products</li>
+        <li data-en="Exceptional customer service dedicated to your satisfaction" data-hi="आपकी संतुष्टि के लिए समर्पित असाधारण ग्राहक सेवा">Exceptional customer service dedicated to your satisfaction</li>
+        <!-- Add more points -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 data-en="What Our Customers Say" data-hi="हमारे ग्राहक क्या कहते हैं">What Our Customers Say</h2>
+      <div class="testimonial-cards">
+        <!-- Testimonial Card Example -->
+        <div class="testimonial-card">
+          <p>"Great service and very reliable!"</p>
+          <h4>- Rahul Sharma</h4>
+        </div>
+        <!-- Repeat for more testimonials -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <div class="contact" id="contact">
-      <h2 data-en="Contact Us" data-hi="संपर्क करें">Contact Us</h2>
-      <p data-en="Phone: 1234567890" data-hi="फोन: 1234567890">Phone: 1234567890</p>
-      <p data-en="Email: info@harigyan.com" data-hi="ईमेल: info@harigyan.com">Email: info@harigyan.com</p>
-    </div>
-    <!-- Social Media Links -->
-    <div class="social-media">
-      <a href="#" data-en="Facebook" data-hi="फेसबुक">Facebook</a>
-      <!-- Add more links as needed -->
+    <div class="container">
+      <div class="footer-sections">
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h3 data-en="Quick Links" data-hi="त्वरित लिंक">Quick Links</h3>
+          <ul>
+            <li><a href="index.html" data-en="Home" data-hi="होम">Home</a></li>
+            <li><a href="products.html" data-en="Products & Services" data-hi="उत्पाद और सेवाएँ">Products & Services</a></li>
+            <!-- Add more links -->
+          </ul>
+        </div>
+        <!-- Contact Information -->
+        <div class="footer-section">
+          <h3 data-en="Contact Us" data-hi="संपर्क करें">Contact Us</h3>
+          <p data-en="Address: Maharajganj, Azamgarh" data-hi="पता: महाराजगंज, आजमगढ़">Address: Maharajganj, Azamgarh</p>
+          <p data-en="Phone: 532-083-0756" data-hi="फोन: 532-083-0756">Phone: 532-083-0756</p>
+          <p data-en="Email: harigyanenterprise@gmail.com" data-hi="ईमेल: harigyanenterprise@gmail.com">Email: harigyanenterprise@gmail.com</p>
+        </div>
+        <!-- Social Media -->
+        <div class="footer-section">
+          <h3 data-en="Follow Us" data-hi="हमें फॉलो करें">Follow Us</h3>
+          <div class="social-media">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <!-- Add more icons -->
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>
-
