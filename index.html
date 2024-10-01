@@ -7,18 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HariGyan Enterprises - Home</title>
 
+  <script>
+// Define dataLayer and the gtag function.
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+// Set default consent to 'denied' as a placeholder
+// Determine actual values based on your own requirements
+gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'analytics_storage': 'denied'
+});
+</script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-07Z279PQ6R"></script>
+  
   <!-- Default Consent Mode -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
-    // Set default consent to denied for both ads and analytics
-    gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'analytics_storage': 'denied'
     });
 
     // Initialize Google Analytics with your tracking ID
@@ -203,6 +213,8 @@
     gtag('consent', 'update', {
       'ad_storage': 'granted',
       'analytics_storage': 'granted'
+      'ad_user_data': 'granted',
+      'ad_personalization': 'granted'
     });
     
     // Store user consent in localStorage to prevent showing the popup again
