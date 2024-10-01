@@ -641,4 +641,35 @@ footer {
   }
 }
 
+#cookieConsentPopup {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  text-align: center;
+}
+
+#cookieConsentPopup .popup-content p {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+#cookieConsentPopup .popup-content button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#cookieConsentPopup .popup-content button:hover {
+  background-color: #45a049;
+}
 
