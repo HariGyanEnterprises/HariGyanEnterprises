@@ -172,5 +172,20 @@
   </footer>
 
   <script src="scripts/main.js"></script>
+  <script>
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied'
+  });
+
+  // Update consent when user gives consent
+  function userConsent() {
+    gtag('consent', 'update', {
+      'ad_storage': 'granted',
+      'analytics_storage': 'granted'
+    });
+  }
+</script>
+
 </body>
 </html>
