@@ -182,20 +182,40 @@
   </footer>
 
   <script src="scripts/main.js"></script>
-  <script>
-  gtag('consent', 'default', {
-    'ad_storage': 'denied',
-    'analytics_storage': 'denied'
-  });
+  <!-- Cookie Consent Popup -->
+<div id="cookieConsentPopup" style="display: none;">
+  <div class="popup-content">
+    <p>We use cookies to enhance your experience. By continuing to visit this site, you agree to our use of cookies.</p>
+    <button onclick="acceptCookies()">Accept Cookies</button>
+  </div>
+</div>
 
-  // Update consent when user gives consent
-  function userConsent() {
+<script>
+  // Function to show the popup
+  function showCookiePopup() {
+    if (!localStorage.getItem('cookiesAccepted')) {
+      document.getElementById('cookieConsentPopup').style.display = 'block';
+    }
+  }
+
+  // Function to handle consent and hide the popup
+  function acceptCookies() {
     gtag('consent', 'update', {
       'ad_storage': 'granted',
       'analytics_storage': 'granted'
     });
+    
+    // Store user consent in localStorage to prevent showing the popup again
+    localStorage.setItem('cookiesAccepted', 'true');
+    
+    // Hide the popup
+    document.getElementById('cookieConsentPopup').style.display = 'none';
   }
+
+  // Show the popup when the page loads
+  window.onload = showCookiePopup;
 </script>
+
 
 </body>
 </html>
